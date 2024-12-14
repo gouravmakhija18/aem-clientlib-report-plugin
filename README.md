@@ -1,13 +1,30 @@
 # AEM Clientlib Details Plugin
 
-This plugin analyzes client libraries in an AEM project and exports the details into a report. The name follows the convention `aem-clientlib-<something>`.
-
+This plugin analyzes client libraries in an AEM project and exports the details into a report.
 
 ## How to Use
 
-1. Place the `aem-clientlib-details-plugin.js` file in the `plugins` directory.
-2. Import and configure the plugin in your Webpack configuration file (`webpack.config.js`).
-3. Run your Webpack build to generate the clientlib report (e.g., `clientlib-report.xlsx`).
+```javascript
+
+// Import plugin in webpack configuration file
+const AEMClientlibDetailsPlugin = require('aem-clientlib-details-plugin');
+
+// Provide plugin configuration
+new AEMClientlibDetailsPlugin({
+  uiAppsPath: path.resolve(__dirname, '../ui.apps/'),
+  additionalData: ['categories', 'dependencies', 'embed'],
+  exportToExcel: true,
+  outputFilePath: 'clientlib-report.xlsx',
+  excludeDirectories: ['target'],
+  sortBy: 'size',         // or 'clientname'
+  sortOrder: 'descending', // or 'ascending'
+  hidePath: false,          // Hide the clientlib Path column
+  logger: true,             // Enable logging to see generated files
+});
+
+// Note: uiAppsPath is path for ui.apps directory path
+
+```
 
 ---
 
@@ -27,6 +44,3 @@ This plugin analyzes client libraries in an AEM project and exports the details 
 
 ---
 
-## Naming Convention
-
-This plugin follows the naming convention `aem-clientlib-<something>`, ensuring clarity and consistency across AEM-related tools.
