@@ -2,6 +2,12 @@
 
 This plugin analyzes client libraries in an AEM project and exports the details into a report.
 
+## Installation
+
+```bash
+npm install aem-clientlib-report-plugin --save-dev
+```
+
 ## How to Use
 
 ```javascript
