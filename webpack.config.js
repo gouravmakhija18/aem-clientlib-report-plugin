@@ -1,8 +1,8 @@
-const AemClientlibDetailsPlugin = require('aem-clientlib-details-plugin');
+const AemClientlibReportPlugin = require('aem-clientlib-report-plugin');
 
 module.exports = {
   plugins: [
-    new AemClientlibDetailsPlugin()
+    new AemClientlibReportPlugin()
   ],
   // other configurations...
 };
