@@ -50,3 +50,6 @@ new AEMClientlibDetailsPlugin({
 
 ---
 
+## Recommendations
+1. Use --legacy-peer-deps if Webpack version is lower then 5 for your current setup.
+
