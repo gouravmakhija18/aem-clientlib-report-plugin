@@ -1,0 +1,25 @@
+{
+  "name": "aem-clientlib-report-plugin",
+  "version": "1.0.0",
+  "description": "A Webpack plugin to generate AEM clientlib details as a report.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gouravmakhija18/aem-clientlib-report-plugin.git"
+  },
+  "keywords": [
+    "webpack",
+    "plugin",
+    "clientlibs",
+    "aem",
+    "excel",
+    "report"
+  ],
+  "author": "Gourav Makhija",
+  "license": "MIT",
+  "dependencies": {
+    "exceljs": "^4.4.0",
+    "xml2js": "^0.6.2",
+    "zlib": "^1.0.5"
+  }
+}
