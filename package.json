@@ -1,6 +1,6 @@
 {
   "name": "aem-clientlib-report-plugin",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "A Webpack plugin to generate AEM clientlib details as a report.",
   "main": "index.js",
   "type": "commonjs",
