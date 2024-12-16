@@ -13,7 +13,7 @@ npm install aem-clientlib-report-plugin --save-dev
 ```javascript
 
 // Import plugin in webpack configuration file
-const AEMClientlibDetailsPlugin = require('aem-clientlib-details-plugin');
+const AEMClientlibDetailsPlugin = require('aem-clientlib-report-plugin');
 
 // Provide plugin configuration
 new AEMClientlibDetailsPlugin({
